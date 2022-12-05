@@ -1,0 +1,30 @@
+
+<div class='container'>
+	<div class='container'>
+	<h1>Live Stock Tracker</h1>
+	<p>Select your stocks</p>
+	<form action='/mainapp/stocktracker'>
+	<label for='stockpicker'>Select Stocks:</label><br>
+	<select class="form-select from-select-lg mb-3" multiple aria-label="multiple select example" name='stockpicker'>
+
+		{% for i in stockpicker %}
+		<option value='{{i}}'>{{i}}</option>
+		{% endfor %}
+	</select>
+
+	<br>
+
+	<div class="d-grid gap-2">
+	  <input class="btn btn-primary" type="submit" value='submit'>
+
+	</div>
+
+	</form>
+	</div>
+
+</div>
+
+
+
+
+
